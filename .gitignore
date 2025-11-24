@@ -1,0 +1,6 @@
+# Node modules
+node_modules/
+
+# Optional: other common ignores
+dist/
+
