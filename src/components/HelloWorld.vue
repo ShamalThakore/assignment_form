@@ -266,14 +266,17 @@ export default {
           fileName:this.form.file.name
         };
 
-        // const token = "YOUR_JWT_TOKEN_HERE"; // replace with your token
+        // I am using a dummy API for testing purposes, so I am not passing a token. 
+        // You can uncomment the lines below and provide your token if needed.
+        
+        // const token = "YOUR_JWT_TOKEN_HERE"; // Replace with your token
 
 
         fetch('https://jsonplaceholder.typicode.com/posts', {
           method: 'POST',
           headers: { 
             'Content-Type': 'application/json',
-            // 'Authorization' : `${token}`
+            // 'Authorization' : `${token}`  // Uncomment and provide token if required
           },
           body: JSON.stringify(payload)
         })
